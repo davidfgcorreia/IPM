@@ -133,7 +133,7 @@ function printAndSavePerformance()
   }
   
   // Sends data to DB (DO NOT CHANGE!)
-  if (RECORD_TO_FIREBASE)
+  if (RECORD_TO_FIREBASE && firebaseConfig)
   {
     // Access the Firebase DB
     if (attempt === 0)
