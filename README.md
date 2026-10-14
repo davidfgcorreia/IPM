@@ -14,6 +14,8 @@ The prototype currently asks visitors to sign in to Figma. Its file owner must c
 
 ## Selection-time experiment
 
+[Open the public browser demo](https://davidfgcorreia.github.io/IPM/).
+
 Run a static server from the repository root:
 
 ```sh
