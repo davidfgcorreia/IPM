@@ -9,7 +9,7 @@ function drawUserIDScreen()
   background(color(0,0,0));                                          // sets background to black
   
   // Text prompt
-  main_text = createDiv("Insert your student number and display size and before starting ajust zoom");
+  main_text = createDiv("Enter an anonymous participant number and your display size. Adjust zoom before starting.");
   main_text.id('main_text');
   main_text.position(10, 10);
   
@@ -20,7 +20,7 @@ function drawUserIDScreen()
   student_ID_form = createInput('');                                 // create input field
   student_ID_form.position(200, student_ID_pos_y_offset);
   
-  student_ID_label = createDiv("Student number (int)");              // create label
+  student_ID_label = createDiv("Anonymous participant number");              // create label
   student_ID_label.id('input');
   student_ID_label.position(10, student_ID_pos_y_offset);
   
@@ -46,7 +46,7 @@ function validID()
   if(parseInt(student_ID_form.value()) < 200000 && parseInt(student_ID_form.value()) > 1000) return true
   else 
   {
-    alert("Please insert a valid student number (integer between 1000 and 200000)");
+    alert("Use an anonymous number between 1000 and 200000; no real student number is needed.");
 	return false;
   }
 }
